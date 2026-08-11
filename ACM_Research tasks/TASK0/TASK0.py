@@ -4,7 +4,6 @@ from datetime import datetime
 
 def transform_logs(input_text: str) -> str:
 
-    # TRANSFORMATION 1
     email_pattern = r'[\w\.-]+@[\w\.-]+\.\w+'
     text_after_step1 = re.sub(email_pattern, '[HIDDEN]', input_text)
 
